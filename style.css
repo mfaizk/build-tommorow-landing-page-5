@@ -1,117 +1,169 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Navbar */
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1536px;
 }
-.navbar{
+.navbar {
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  background-color: #000000;
+  justify-content: space-around;
+  align-items: center;
+}
+.line {
+  height: 10vh;
+  width: 1px;
+  background-color: #fff;
+}
+.grow-list {
+  height: 10vh;
+  width: 70vw;
+  justify-content: flex-start;
+  align-content: center;
+  justify-content: center;
+}
+
+.list {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.list-item {
+  margin: 20px;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.button-small {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ba0cc5;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+/* Navbar */
+
+/* HERO Section */
+
+.hero {
+  background: url("./assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-heading {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 4rem;
+  width: 50vw;
+
+  text-align: center;
+}
+
+.hero-description {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.button-large {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  background-color: #ba0cc5;
+  border: none;
+  height: 70px;
+  width: 330px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+/* HERO Section */
+
+@media screen and (max-width: 866px) {
+  .navbar {
     display: flex;
-    height: 10vh;
+    height: 550px;
     width: 100vw;
     background-color: #000000;
     justify-content: space-around;
     align-items: center;
-}
-.line{
-    height: 10vh;
-    width: 1px;
+    flex-direction: column;
+  }
+  .line {
+    height: 1px;
+    width: 50vw;
     background-color: #fff;
-}
-.grow-list{
-    height: 10vh;
+  }
+  .grow-list {
+    height: 350px;
     width: 70vw;
     justify-content: flex-start;
     align-content: center;
     justify-content: center;
-}
-
-.list{
+    /* background-color: magenta; */
+    overflow: scroll;
+  }
+  .list {
     color: #fff;
     display: flex;
-    flex-direction: row;
-    margin-top: 15px;
-
-}
-
-.list-item{
-    margin: 20px;
-    list-style: none;
-    font-family: "Poppins",sans-serif;
-}
-
-.button-small{
-
-    height: 40px;
-    width: 150px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ba0cc5;
-    color: #fff;
-    font-family: "Montserrat",sans-serif;
-
-}
-/* Navbar */
-
-
-/* HERO Section */
-
-.hero{
-    background: url("./assets/bg.png") ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    display: flex;
-    height: 90vh;
-    width: 100vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-}
-.hero-heading{
-    font-family: "Montserrat",sans-serif;
+    margin-top: 15px;
+  }
+  .hero-heading {
+    font-family: "Montserrat", sans-serif;
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     width: 50vw;
 
     text-align: center;
-
-
-
-
-}
-
-.hero-description{
-    font-family: "Poppins",sans-serif;
+  }
+  .hero-description {
+    font-family: "Poppins", sans-serif;
     color: #fff;
-    font-size: 1.5rem;
-
-}
-
-.button-large{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .button-large {
     color: #fff;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #ba0cc5;
     border: none;
-    height: 70px;
-    width: 330px;
+    height: 50px;
+    width: 250px;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 1rem;
     font-weight: bold;
     margin-top: 50px;
-
+  }
 }
 
-
-
-
-
-/* HERO Section */
